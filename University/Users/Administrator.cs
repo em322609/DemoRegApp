@@ -13,7 +13,7 @@ namespace University.Users
         }
         public void setPassword(string password)
         {
-            this.setPassword = password;
+            this.Password = password;
         }
     }
 }

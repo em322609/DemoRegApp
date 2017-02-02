@@ -19,6 +19,7 @@ namespace University.Courses
 
         int rosterCount { get; }
         string Title { get; }
+
         List<Student> GetStudentRoster();
         
     }

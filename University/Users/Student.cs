@@ -11,8 +11,9 @@ namespace University.Users
     {
         private string major;
         private bool isFullTime;
-        List<Course> classes = new List<Course>();
+       // List<Course> classes = new List<Course>();
         private bool isFulltime;
+        Dictionary<string, Course> classes = new Dictionary<string, Course>();
 
         //enum year
         //array of courses
@@ -35,10 +36,10 @@ namespace University.Users
             }
             else
             {
-                foreach (var item in classes)
+                foreach (KeyValuePair<string, Course> item in classes)
                 {
                     info.Append("\n");
-                    info.Append(item.Title);
+                    info.Append(item.Value.Title);
 
                 }
             }

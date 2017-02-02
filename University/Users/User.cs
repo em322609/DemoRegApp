@@ -45,6 +45,10 @@ namespace University
 
         }
 
+        public virtual string GetInfo()
+        {
+            return "";
+        }
         public override string ToString()
         {
             string result = "";

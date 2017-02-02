@@ -24,8 +24,25 @@ namespace RegistrationApp
 
             for (int i = 0; i < 3; i++)
             {
+                slist.Add(s);
+            }
+
+            testCourse.AddStudents(slist);
+            try
+            {
+                //open file
+                //read from file
+                //write and save file
+                testCourse.AddStudents(slist);
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex.Message);
+                Console.WriteLine();
+                Console.WriteLine(ex.ToString());
 
             }
+            Console.ReadLine();
         }
     }
 }
